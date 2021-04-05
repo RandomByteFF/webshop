@@ -31,7 +31,24 @@
             </div>
         </div>
     </nav>
-
+    <div class="options">
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="option1" id="option1" name="option1">
+                    <label class="form-check-label" for="option1">
+                    Option 1
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="option2" id="option2" name="option2">
+                    <label class="form-check-label" for="option2">
+                    Option 2
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="row row-cols-3">

@@ -14,3 +14,8 @@ body {
 .itemrow {
     padding-top: 50px;
 }
+
+.options {
+    float: left;
+    padding-top: 200px;
+}
