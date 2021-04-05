@@ -1,0 +1,16 @@
+body {
+    background-color: white
+}
+
+.item {
+    transition: transform .2s;
+    margin: auto;
+}
+
+.item:hover {
+    transform: scale(1.1);
+}
+
+.itemrow {
+    padding-top: 50px;
+}
