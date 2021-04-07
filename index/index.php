@@ -53,14 +53,32 @@
     <div class="container">
         <div class="row row-cols-3">
             <?php
-                $dir = "../images";
+                $servername = "localhost";
+                $username = "root";
+                $password = "";
+                $conn = new mysqli($servername, $username, $password);
+                if ($conn->connect_error) {
+                    die("Connection failed: " . $conn->connect_error);
+                }
+                $sql = "SELECT * FROM items";
+                $result = $conn->query($sql);
+
+                if ($result !== false && $result->num_rows > 0) {
+                    while($row = $result->fetch_assoc()){
+                        echo $row["joe"];
+                    }
+                }
+
+                $conn->close();
+
+                $dir = "../images/items/";
                 $scan = scandir($dir);
                 $imagesCount = count($scan) - 2;
                 for ($i=0; $i < count($scan); $i++) { 
                     if ($scan[$i] !== "." && $scan[$i] !== ".."){
                         echo "<div class=\"col itemrow\">";
                         echo "<div class=\"card item\" style=\"width: 18rem;\">";
-                        echo "<img src=\"../images/$scan[$i]\" class=\"card-img-top\" height=\"300px\" width=\"300px\">";
+                        echo "<img src=\"$dir"."$scan[$i]\" class=\"card-img-top\" height=\"300px\" width=\"300px\">";
                         echo "<div class=\"card-body\">";
                         echo "<h5 class=\"card-title\">Fat fuck</h5>";
                         echo "<p class=\"card-text\">$scan[$i]</p>";

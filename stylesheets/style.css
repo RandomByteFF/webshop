@@ -1,5 +1,5 @@
 body {
-    background-color: white
+    background-color: rgb(255, 255, 255);
 }
 
 .item {
@@ -18,4 +18,5 @@ body {
 .options {
     float: left;
     padding-top: 200px;
+    padding-left: 20px;
 }
