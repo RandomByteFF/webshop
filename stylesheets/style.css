@@ -1,5 +1,15 @@
+:root{
+    --primary: #0D6EFD;
+    --secondary: #198754;
+    --success: #FDE74C;
+    --danger: #06648C;
+    --light: #ececec;
+    --dark: #212529;
+    /*ezek csak példák és a bootstrapnek már alapvetően be vannak állítva*/
+}
+
 body {
-    background-color: rgb(255, 255, 255);
+    background-color: var(--light);
 }
 
 .item {
@@ -12,11 +22,5 @@ body {
 }
 
 .itemrow {
-    padding-top: 50px;
-}
-
-.options {
-    float: left;
-    padding-top: 200px;
-    padding-left: 20px;
+    padding-top: 30px;
 }
