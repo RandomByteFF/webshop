@@ -7,10 +7,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" aria-current="page" href="#">Főoldal</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Shop</a>
+                    <a class="nav-link" href="#">Bolt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/components/logout.php">Kijelentkezés</a>
                 </li>
             </ul>
             <form class="d-flex">

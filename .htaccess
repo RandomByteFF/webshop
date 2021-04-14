@@ -3,3 +3,4 @@ Options +FollowSymlinks
 
 RewriteRule ^$ index.php [L]
 RewriteRule ^landing/$ landing.php [L]
+RewriteRule ^login/$ login.php [L]
