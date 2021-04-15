@@ -10,8 +10,13 @@
     --background: #1C2541;
 }
 
+.light-text{
+    --text: #6FFFE9 !important;
+}
+
 body {
     background-color: var(--background);
+    color: var(--text);
     /*min-height: 100vh;*/
 }
 
@@ -26,4 +31,12 @@ body {
 
 .itemrow {
     padding-top: 30px;
+}
+
+hr {
+    border: 10px solid #0B132B;
+}
+
+.wide-image {
+    width: 100%;
 }

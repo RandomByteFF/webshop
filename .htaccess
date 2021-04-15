@@ -1,6 +1,7 @@
 RewriteEngine on
 Options +FollowSymlinks
 
-RewriteRule ^$ index.php [L]
-RewriteRule ^landing/$ landing.php [L]
-RewriteRule ^login/$ login.php [L]
+RewriteRule ^$ landing.php [L]
+RewriteRule ^shop$ shop.php [L]
+RewriteRule ^login$ login.php [L]
+RewriteRule ^about$ about.php [L]
