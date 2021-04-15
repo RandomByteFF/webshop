@@ -5,11 +5,14 @@
     --danger: #06648C;
     --light: #ececec;
     --dark: #212529;
+    
     /*ezek csak példák és a bootstrapnek már alapvetően be vannak állítva*/
+    --background: #1C2541;
 }
 
 body {
-    background-color: var(--light);
+    background-color: var(--background);
+    /*min-height: 100vh;*/
 }
 
 .item {

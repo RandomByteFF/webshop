@@ -13,6 +13,9 @@
                     <a class="nav-link" href="#">Bolt</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="/about.php">Rólunk</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="/components/logout.php">Kijelentkezés</a>
                 </li>
             </ul>
