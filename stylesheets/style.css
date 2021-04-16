@@ -8,6 +8,17 @@
     
     /*ezek csak példák és a bootstrapnek már alapvetően be vannak állítva*/
     --background: #1C2541;
+    --nav: #0B132B;
+}
+
+#navigation{
+    background-color: var(--nav);
+}
+
+.footer{
+    width: 100%;
+    position: inherit;
+    bottom: 0;
 }
 
 .light-text{
@@ -35,6 +46,7 @@ body {
 
 hr {
     border: 10px solid #0B132B;
+    margin: 0px;
 }
 
 .wide-image {
