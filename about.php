@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="../stylesheets/style.css">
     <title>Rólunk</title>
 </head>
-<body class="light-text">
+<body>
     <?php include_once("components/checkLogin.php") ?>
     <?php include_once("components/menu.php") ?>
 
-    <div class="row text-center p-1" style="width: 100%">
-        <div class="col col-md-4 col-sm-12">
+    <div class="row text-center p-1 light-text" style="width: 100%">
+        <div class="col col-md-4 col-sm-12 col-12">
             <div class="row justify-content-center">
                     <div class="col col-md-12">
-                        <img class="col col-xl-9 col-md-12 col-sm-6 rounded-circle p-4" src="/images/components/profile.jpeg" alt="profile">
+                        <img class="col col-xl-9 col-md-12 rounded-circle p-4 wide-image" src="/images/components/profile2.png" alt="profile">
                     </div>
             </div>
             <div class="row">
@@ -26,15 +26,15 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 h3 font-weight-bold">
-                    Becses Nevem
+                    Horváth Kristóf
                 </div>
             </div>
         </div>
 
-        <div class="col col-md-4 col-sm-12">
+        <div class="col col-md-4 col-sm-12 col-12">
             <div class="row justify-content-center">
                     <div class="col col-md-12">
-                        <img class="col col-xl-9 col-md-12 col-sm-6 rounded-circle p-4" src="/images/components/profile.jpeg" alt="profile">
+                        <img class="col col-xl-9 col-md-12 rounded-circle p-4 wide-image" src="/images/components/profile1.png" alt="profile">
                     </div>
             </div>
             <div class="row">
@@ -44,15 +44,15 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 h3 font-weight-bold">
-                    Becses Nevem
+                    Bánáti Benedek
                 </div>
             </div>
         </div>
         
-        <div class="col col-md-4 col-sm-12">
+        <div class="col col-md-4 col-sm-12 col-12">
             <div class="row justify-content-center">
                     <div class="col col-md-12">
-                        <img class="col col-xl-9 col-md-12 col-sm-6 rounded-circle p-4" src="/images/components/profile.jpeg" alt="profile">
+                        <img class="col col-xl-9 col-md-12 rounded-circle p-4 wide-image" src="/images/components/profile3.jpg" alt="profile">
                     </div>
             </div>
             <div class="row">
@@ -62,13 +62,13 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 h3 font-weight-bold">
-                    Becses Nevem
+                    Boglári Gergely László
                 </div>
             </div>
         </div>
     </div>
     <div class="row text-center p-4 m-2">
-        <div class="col-sm-12 shadow-lg p-3 mb-5 border border-primary border-2">
+        <div class="col-sm-12 shadow-lg p-3 mb-5 border border-primary border-2 light-text">
             <h1><u>Rólunk</u></h1>
             <figure>
                 <blockquote class="blockquote ">

@@ -3,11 +3,11 @@ session_start();
 $error=false;
 if (isset($_SESSION["loggedIn"]) && $_SESSION["loggedIn"] == true)
 {
-    header("location: index.php");
+    header("location: ..");
     exit;
 }
 
-$values= array("email", "name", "postal_code", "town", "address");
+$values= array("email", "name", "postal_code", "town", "address", "phone");
 foreach ($values as &$value){
     if(isset($_POST[$value])){
         $_SESSION[$value] = $_POST[$value];
@@ -21,7 +21,7 @@ if($error == false){
     $shoppingCart = array();
     $_SESSION["loggedIn"] = true;
     $_SESSION["shoppingCart"] = serialize($shoppingCart);
-    header("location: index.php");
+    header("location: ..");
     exit;
 }
 
@@ -76,9 +76,15 @@ if($error == false){
                         </div>
                     </div>
                     <div class="col-sm-12 p-1">
+                        <div class="form-floating">
+                            <input type="tel" class="form-control" name="phone" placeholder="street" pattern="([0-9]{11}|\+[0-9]{11})" required>
+                            <label for="phone">Telefonszám</label>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 p-1">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="accept_cookie" name="accept_cookie" required>
-                            <label class="form-check-label" for="accept_cookie">elfogadom az oldal cookie használatát</label>
+                            <label class="form-check-label" for="accept_cookie">Elfogadom az oldal cookie használatát</label>
                         </div>
                     </div>
                 </div>

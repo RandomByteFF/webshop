@@ -9,10 +9,7 @@
     /*ezek csak példák és a bootstrapnek már alapvetően be vannak állítva*/
     --background: #1C2541;
     --nav: #0B132B;
-}
-
-#navigation{
-    background-color: var(--nav);
+    --text: #6FFFE9;
 }
 
 .footer{
@@ -22,12 +19,11 @@
 }
 
 .light-text{
-    --text: #6FFFE9 !important;
+    color: var(--text) !important;
 }
 
 body {
     background-color: var(--background);
-    color: var(--text);
     /*min-height: 100vh;*/
 }
 

@@ -1,0 +1,82 @@
+:root {
+    --nav: #0B132B;
+}
+
+#navigation{
+    background-color: var(--nav);
+    padding-bottom: 10px;
+}
+
+.brandtext {
+    color: #6FFFE9 !important;
+    font-size: 40pt;
+}
+
+.navtext {
+    padding-bottom: 13px;
+    color: #6FFFE9 !important;
+    font-size: 20pt;
+}
+
+.underheader {
+    background-color: var(--nav);
+    color: #49B8A7 !important;
+    font-size: 15pt;
+    padding-top: 0px;
+    font-style: italic;
+    padding-left: 3px;
+}
+
+#navbarSupportedContent {
+    padding-left: 20px;
+}
+
+.active {
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    margin-bottom: 12px;
+    padding-top: 0px
+}
+
+.search-left{
+    border-radius: 10px 0px 0px 10px;
+    height: 50px;
+}
+
+.search-right{
+    border-radius: 0px 10px 10px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 7px;
+    padding-bottom: 0px;
+
+    background-color: #6FFFE9;
+    color: #000;
+}
+
+.search-right:hover {
+    border-radius: 0px 10px 10px 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 7px;
+    padding-bottom: 0px;
+
+    background-color: #5BC0BE;
+    color: #000;
+}
+
+.search {
+    padding-bottom: 12px;
+}
+
+.icon {
+    height: 100%;
+    padding: 0;
+}
+
+.icon-box{
+    padding-bottom: 12px;
+    width: 7rem;
+}
