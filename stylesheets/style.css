@@ -1,4 +1,4 @@
-:root{
+:root {
     --primary: #0D6EFD;
     --secondary: #198754;
     --success: #FDE74C;
@@ -12,19 +12,18 @@
     --text: #6FFFE9;
 }
 
-.footer{
+.footer {
     width: 100%;
     position: inherit;
     bottom: 0;
 }
 
-.light-text{
+.light-text {
     color: var(--text) !important;
 }
 
 body {
     background-color: var(--background);
-    /*min-height: 100vh;*/
 }
 
 .item {
@@ -46,5 +45,25 @@ hr {
 }
 
 .wide-image {
+    width: 100%;
+}
+
+.shop-item{
+    object-fit: cover; 
+    height: 300px
+}
+/*Ha a footer mérete változik, akkor a 232-t át kell váltani arra*/
+.content{
+    width: 100%;
+    min-height: 100vh;
+    overflow: auto;
+    padding-bottom: 252px;
+}
+
+footer{
+    position:relative;
+    margin-top: -232px;
+    bottom: 0;
+    height: 232px;
     width: 100%;
 }

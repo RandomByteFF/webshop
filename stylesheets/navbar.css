@@ -4,7 +4,6 @@
 
 #navigation{
     background-color: var(--nav);
-    padding-bottom: 10px;
 }
 
 .brandtext {
@@ -13,9 +12,9 @@
 }
 
 .navtext {
-    padding-bottom: 13px;
+    padding-bottom: 4px;
     color: #6FFFE9 !important;
-    font-size: 20pt;
+    font-size: 19pt;
 }
 
 .underheader {
