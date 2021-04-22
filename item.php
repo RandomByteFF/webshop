@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html lang="hu">
 <?php 
-    //if(!isset($_GET["item_id"])){} ez még később hasznos lesz
+    if(!isset($_GET["id"])){
+        header("location: /");
+        exit;
+    } 
+    $id=$_GET["id"];
     include_once("components/header.php");
     SetHeader("Item", array("navbar.css", "style.css"));
 ?>
 
 <body>
-    <div class="content">
+    <div class="content bg-white">
         <?php include_once("components/menu.php"); ?>
-        <div class="bg-white p-3">
-            <div class="row" style="border-bottom: 1px solid black">
-                <p class="h2">Item name</p>
-                <div class="col-md-4">
-                    <img src="images/items/mouse1.jpg">
-                </div>
-                <div class="col-md-8">
-                    aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa NO
-                </div>
-            </div>
-            
-            <table class="table table-primary table-sm caption-top">
-                <caption>specs</caption>
-                <tr>
-                    <th scope="row">Speed</th>
-                    <td>Fast</td>
-                </tr>
-                <tr>
-                    <th scope="row">Wireless</th>
-                    <td>Perhaps</td>
-                </tr>
-            </table>
+        <div class="d m-1 p-4">
+            <?php 
+            include_once("components/sql.php");
+            $query="SELECT * FROM items WHERE id =".$id;
+            $result = $conn->query($query);
+            $conn->close();
+            if ($result){
+                $info = $result->fetch_assoc();
+                include_once("components/information.php");   
+            }
+            else{
+                echo '<p class="h1">Adatbázis hiba</p>';
+            }
+            ?>
+
         </div>
     </div>
     <?php include_once("components/footer.php"); ?>

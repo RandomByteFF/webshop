@@ -29,11 +29,11 @@
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <hr/>
+        <hr class="menu_hr"/>
             <div class="wide-image">
                 <img class="wide-image" src="/images/components/mouse4.jpg" alt="...">
             </div>
-        <hr/>
+        <hr class="menu_hr"/>
         <div class="wide-image">
             <img class="wide-image" src="/images/components/mouse5.jpg" alt="...">
         </div>

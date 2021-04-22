@@ -29,6 +29,7 @@ body {
 .item {
     transition: transform .2s;
     margin: auto;
+    width: 18rem;
 }
 
 .item:hover {
@@ -39,7 +40,7 @@ body {
     padding-top: 30px;
 }
 
-hr {
+.menu_hr {
     border: 10px solid #0B132B;
     margin: 0px;
 }
@@ -52,18 +53,18 @@ hr {
     object-fit: cover; 
     height: 300px
 }
-/*Ha a footer mérete változik, akkor a 232-t át kell váltani arra*/
+/*Ha a footer mérete változik, akkor a 160-t át kell váltani arra*/
 .content{
     width: 100%;
     min-height: 100vh;
     overflow: auto;
-    padding-bottom: 252px;
+    padding-bottom: 180px;
 }
 
 footer{
     position:relative;
-    margin-top: -232px;
+    margin-top: -144px;
     bottom: 0;
-    height: 232px;
+    height: 144px;
     width: 100%;
 }

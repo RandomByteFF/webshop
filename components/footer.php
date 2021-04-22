@@ -1,15 +1,18 @@
 <footer class="text-center text-white" id="navigation">
-    <div class="p-4">
+    <div class="p-3">
         <section>
             <div class="row">
-                <div class="col col-sm-2">
-                    <h5 class="text-uppercase">Linkek</h5>
-                    <ul class="list-unstyled mb-0">
-                        <li><a href="/" class="text-white">Főoldal</a></li>
-                        <li><a href="/shop" class="text-white">Bolt</a></li>
-                        <li><a href="/about" class="text-white">Rólunk</a></li>
-                        <li><a href="#!" class="text-white">Kijelentkezés</a></li>
-                    </ul>
+                <h5 class="col-12 text-uppercase">Linkek</h5>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <a href="/about" class="text-white">Rólunk</a>
+                </div>
+                <div class="col-6">
+                    Sponsored by: Bánáti Benedek
+                </div>
+                <div class="col-3">
+                    <a href="/logout.php" class="text-white">Kijelentkezés</a>
                 </div>
         </section>
     </div>

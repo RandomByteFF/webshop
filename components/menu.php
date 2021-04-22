@@ -21,9 +21,6 @@
                 <li class="nav-item navtext">
                     <a class="nav-link navtext <?php echo ($page == "/shop" ? "active":"")?>" href="/shop">Bolt</a>
                 </li>
-                <li class="nav-item navtext">
-                    <a class="nav-link navtext <?php echo ($page == "/about" ? "active":"")?>" href="/about">Rólunk</a>
-                </li>
                 <!--ICON TO TEXT-->
                 <div class="d-block d-xl-none">
                     <li class="nav-item navtext">
@@ -33,10 +30,10 @@
                         <a class="nav-link navtext <?php echo ($page == "/cart" ? "active":"")?>" href="/cart">Kosár</a>
                     </li>
                 </div>
-                <!--LOG OUT-->
+                <!--LOG OUT>
                 <li class="nav-item navtext">
                     <a class="nav-link navtext" href="/components/logout.php">Kijelentkezés</a>
-                </li>
+                </li-->
             </ul>
             <!--SEARCH BAR-->
             <form class="d-flex search">
