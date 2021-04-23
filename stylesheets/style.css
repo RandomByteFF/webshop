@@ -26,20 +26,6 @@ body {
     background-color: var(--background);
 }
 
-.item {
-    transition: transform .2s;
-    margin: auto;
-    width: 18rem;
-}
-
-.item:hover {
-    transform: scale(1.1);
-}
-
-.itemrow {
-    padding-top: 30px;
-}
-
 .menu_hr {
     border: 10px solid #0B132B;
     margin: 0px;
@@ -53,7 +39,7 @@ body {
     object-fit: cover; 
     height: 300px
 }
-/*Ha a footer mérete változik, akkor a 160-t át kell váltani arra*/
+
 .content{
     width: 100%;
     min-height: 100vh;
@@ -67,4 +53,14 @@ footer{
     bottom: 0;
     height: 144px;
     width: 100%;
+}
+
+.productImage {
+    width: 98%; 
+    border: 1px solid gray !important;
+    border-radius: 5px;
+}
+
+.amount {
+    width: 200px;
 }

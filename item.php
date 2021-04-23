@@ -15,7 +15,7 @@
         <?php include_once("components/menu.php"); ?>
         <div class="d m-1 p-4">
             <?php 
-            include_once("components/sql.php");
+            include_once("components/sql/sql.php");
             $query="SELECT * FROM items WHERE id =".$id;
             $result = $conn->query($query);
             $conn->close();

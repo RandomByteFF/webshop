@@ -23,7 +23,7 @@
                                 </div>
                         </div>
                         <div class="row">
-                            <div class="col-sm-12 h5" style="font-weight: lighter">
+                            <div class="col-sm-12 h5 font-weight-lighter">
                                 <i>'.$u[1].'</i>
                             </div>
                         </div>

@@ -1,0 +1,52 @@
+.colorButton {
+    height: 30px;
+    width: 30px;
+    border: 1px solid gray;
+    cursor: pointer;
+    color:white;
+    border-radius: 100%;
+}
+
+.colorButton:hover{
+    border: 2px solid rgb(71, 71, 71);
+}
+
+.colorField{
+    height: 35px;
+}
+
+.shop-bottom {
+    position: absolute;
+    bottom: 0;
+}
+
+.price {
+    float: right;
+    font-weight: bold;
+    font-size: 20pt;
+    margin-left: 50px;
+}
+
+.card-body {
+    position: relative;
+}
+
+.item {
+    transition: transform .2s;
+    margin: auto;
+    width: 18rem;
+    min-height: 480px;
+}
+
+.item:hover {
+    transform: scale(1.1);
+}
+
+.itemrow {
+    padding-top: 30px;
+}
+
+.settings{
+    width: 100%;
+    min-height: fit-content !important;
+}
