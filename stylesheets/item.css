@@ -1,0 +1,17 @@
+.productImage {
+    width: 98%; 
+    border: 1px solid gray !important;
+    border-radius: 5px;
+}
+
+.amount {
+    width: 200px;
+}
+
+.toast{
+    position: fixed;
+    bottom: 30px;
+    z-index: 1000;
+    max-width: 80%;
+    display: flex;
+}

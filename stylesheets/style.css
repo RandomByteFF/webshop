@@ -1,12 +1,4 @@
 :root {
-    --primary: #0D6EFD;
-    --secondary: #198754;
-    --success: #FDE74C;
-    --danger: #06648C;
-    --light: #ececec;
-    --dark: #212529;
-    
-    /*ezek csak példák és a bootstrapnek már alapvetően be vannak állítva*/
     --background: #1C2541;
     --nav: #0B132B;
     --text: #6FFFE9;
@@ -35,16 +27,11 @@ body {
     width: 100%;
 }
 
-.shop-item{
-    object-fit: cover; 
-    height: 300px
-}
-
 .content{
     width: 100%;
     min-height: 100vh;
     overflow: auto;
-    padding-bottom: 180px;
+    padding-bottom: 150px;
 }
 
 footer{
@@ -53,14 +40,4 @@ footer{
     bottom: 0;
     height: 144px;
     width: 100%;
-}
-
-.productImage {
-    width: 98%; 
-    border: 1px solid gray !important;
-    border-radius: 5px;
-}
-
-.amount {
-    width: 200px;
 }

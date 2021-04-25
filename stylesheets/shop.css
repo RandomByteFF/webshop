@@ -42,6 +42,14 @@
     transform: scale(1.1);
 }
 
+.item .card-title{
+    color: black;
+}
+
+.item a:any-link{
+    text-decoration: none;
+}
+
 .itemrow {
     padding-top: 30px;
 }
@@ -49,4 +57,9 @@
 .settings{
     width: 100%;
     min-height: fit-content !important;
+}
+
+.shop-item{
+    object-fit: cover; 
+    height: 300px
 }

@@ -108,7 +108,7 @@
                                                     <a href=item.php/?id='.$row["id"].'><h5 class="card-title">'.$row["name"].'</h5></a>
                                                     <div class="shop-bottom">
                                                         <p class="card-text price">'.$row["price"].' Ft</p>
-                                                        <a href=item.php/?id='.$row["id"].' class="btn btn-primary">Részletek</a>
+                                                        <a href=item.php/?id='.$row["id"].' class="btn btn-primary white-text">Részletek</a>
                                                     </div>
                                                 </div>
                                             </div>

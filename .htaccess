@@ -4,5 +4,6 @@ Options +FollowSymlinks
 RewriteRule ^$ landing.php [L]
 RewriteRule ^shop$ shop.php [L]
 RewriteRule ^login$ login.php [L]
+RewriteRule ^cart$ cart.php [L]
 RewriteRule ^about$ about.php [L]
-RewriteRule ^logout$ components/logout.php [L]
+RewriteRule ^logout$ components/user/logout.php [L]

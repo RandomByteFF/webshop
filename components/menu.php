@@ -1,5 +1,5 @@
 <?php 
-    include_once("components/checkLogin.php");
+    include_once("components/user/checkLogin.php");
     $page=$_SERVER["REQUEST_URI"];
 
     if (isset($_GET['search']) && $page != "/shop?" . $_SERVER['QUERY_STRING']) {
