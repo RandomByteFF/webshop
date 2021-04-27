@@ -18,13 +18,10 @@ foreach ($values as &$value){
     }
 }
 if($error == false){
-    $shoppingCart = array();
     $_SESSION["loggedIn"] = true;
-    $_SESSION["shoppingCart"] = serialize($shoppingCart);
     header("location: ..");
     exit;
 }
-
 ?>
 
 <!DOCTYPE html>
@@ -44,7 +41,8 @@ if($error == false){
                 <div class="card-body row">
                     <div class="col-sm-12 p-1">
                         <div class="form-floating">
-                            <input type="email" class="form-control" name="email" placeholder="name@example.com" required>
+                            <input type="email" class="form-control" name="email" placeholder="name@example.com"
+                                required>
                             <label for="email">Email</label>
                         </div>
                     </div>
@@ -56,7 +54,8 @@ if($error == false){
                     </div>
                     <div class="col-md-5 p-1">
                         <div class="form-floating">
-                            <input type="text" class="form-control" name="postal_code" placeholder="0000" pattern="[0-9]{4}" required>
+                            <input type="text" class="form-control" name="postal_code" placeholder="0000"
+                                pattern="[0-9]{4}" required>
                             <label for="postal_code">Irányító szám</label>
                         </div>
                     </div>
@@ -74,14 +73,17 @@ if($error == false){
                     </div>
                     <div class="col-sm-12 p-1">
                         <div class="form-floating">
-                            <input type="tel" class="form-control" name="phone" placeholder="street" pattern="([0-9]{11}|\+[0-9]{11})" required>
+                            <input type="tel" class="form-control" name="phone" placeholder="street"
+                                pattern="([0-9]{11}|\+[0-9]{11})" required>
                             <label for="phone">Telefonszám</label>
                         </div>
                     </div>
                     <div class="col-sm-12 p-1">
                         <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="accept_cookie" name="accept_cookie" required>
-                            <label class="form-check-label" for="accept_cookie">Elfogadom az oldal cookie használatát</label>
+                            <input class="form-check-input" type="checkbox" value="" id="accept_cookie"
+                                name="accept_cookie" required>
+                            <label class="form-check-label" for="accept_cookie">Elfogadom az oldal cookie
+                                használatát</label>
                         </div>
                     </div>
                 </div>
@@ -91,7 +93,10 @@ if($error == false){
                 <input type="submit" class="btn btn-primary" value="Belépés">
             </div>
         </form>
-    <div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+        <div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+                crossorigin="anonymous"></script>
 </body>
+
 </html>

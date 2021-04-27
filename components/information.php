@@ -1,13 +1,27 @@
 <script>
+    document.addEventListener("submit", (event) => {
+        event.preventDefault();
+        fetch( "/components/cookies/add.php", { method: "POST", body: new FormData(event.target)});
+        ShowToast();
+        });
+
+    let toast;
+    
     function CloseToast(){
-        window.toast=document.getElementById("toast").style.display="none";
-        console.log("got it");
+        toast.hide();
+        toast= null;
+    }
+
+    function ShowToast(){
+        let t = (new bootstrap.Toast( document.getElementById("toast"), { autohide: false }));
+        toast=t;
+        toast.show();
     }
 </script>
 
 <nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="/shop">Shop</a></li>
+    <ol class="breadcrumb m-2">
+        <li class="breadcrumb-item"><a href="/shop">Bolt</a></li>
         <?php echo '<li class="breadcrumb-item"><a href="/shop?brand='.$info["brand"].'">'.$info["brand"].'</a></li>'; ?>
         <?php echo '<li class="breadcrumb-item active">'.$info["name"].'</li>'; ?>
     </ol>
@@ -70,14 +84,11 @@
     </p>
 </div>
 
-<?php
-        if(isset($_SESSION["added"]) && $_SESSION["added"]==true){
-            echo '<div class="toast align-items-center text-white bg-success fade show" role="alert" id="toast">
-            <div class="toast-body">
-              Kosárhoz adva!
-            </div>
-            <button type="button" class="btn-close btn-close-white ms-auto m-3" aria-label="Close" onclick="CloseToast()"></button>
-          </div>';
-          $_SESSION["added"]=false;
-        }
-?>
+<div class="toast align-items-center text-white bg-success fade hide" role="alert" id="toast">
+    <a href="/cart" class="white-text">
+    <div class="toast-body">
+        Kosárhoz adva!
+    </div>
+    </a>
+    <button type="button" class="btn-close btn-close-white ms-auto m-3" aria-label="Close" onclick="CloseToast()"></button>
+</div>

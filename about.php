@@ -48,11 +48,14 @@
                     </figcaption>
                 </figure>
                 <div class="p-3">
-                    Magyar cégünk egerek forgalmazására és értékesítésére specializálódott. Adunk a minőségre és vásárlóink elégedettségére. Célunk, hogy mindenkinek az otthonában olyan eszköz legyen, ami hosszú távon kielégíti az igényeit
+                    Magyar cégünk egerek forgalmazására és értékesítésére specializálódott. Adunk a minőségre és
+                    vásárlóink elégedettségére. Célunk, hogy mindenkinek az otthonában olyan eszköz legyen, ami hosszú
+                    távon kielégíti az igényeit
                 </div>
             </div>
         </div>
     </div>
     <?php include_once("components/footer.php") ?>
 </body>
+
 </html>

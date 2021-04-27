@@ -20,24 +20,27 @@
                     <img src="/images/components/mouse3.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
-        <hr class="menu_hr"/>
-            <div class="wide-image">
-                <img class="wide-image" src="/images/components/mouse4.jpg" alt="...">
-            </div>
-        <hr class="menu_hr"/>
+        <hr class="menu_hr" />
+        <div class="wide-image">
+            <img class="wide-image" src="/images/components/mouse4.jpg" alt="...">
+        </div>
+        <hr class="menu_hr" />
         <div class="wide-image">
             <img class="wide-image" src="/images/components/mouse5.jpg" alt="...">
         </div>
     </div>
     <?php include_once("components/footer.php"); ?>
 </body>
+
 </html>

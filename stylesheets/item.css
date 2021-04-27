@@ -15,3 +15,8 @@
     max-width: 80%;
     display: flex;
 }
+
+.toast a:any-link{
+    color: white;
+    text-decoration: none;
+}

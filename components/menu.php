@@ -52,10 +52,10 @@
             <!--ICONS-->
             <div class="d-none d-xl-block">
                 <div class="row m-3 icon-box">
-                    <a class="col m-2 p-0" href="#">
+                    <a class="col m-2 p-0" href="/profile">
                         <img class="icon" src="/images/components/profile-user.svg" />
                     </a>    
-                    <a class="col m-2 p-0" href="#">
+                    <a class="col m-2 p-0" href="/cart">
                         <img class="icon" src="/images/components/shopping-cart.svg" />
                     </a>
                 </div>
