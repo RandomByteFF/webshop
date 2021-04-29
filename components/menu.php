@@ -12,7 +12,7 @@
 <nav class="navbar navbar-dark navbar-expand-xl" id="navigation">
     <div class="container-fluid">
         <!--BRAND NAME-->
-        <a class="navbar-brand brandtext" href="..">Brand name<br><div class=underheader>Egy ütős szinoníma</div></a>
+        <a class="navbar-brand brandtext" href="/">Brand name<br><div class=underheader>Egy ütős szinoníma</div></a>
         <!--NAVBAR TOGGLER-->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

@@ -9,7 +9,6 @@
             $item=$_POST["item"];
             $id=$_POST["id"];
             setcookie("cart[".$id."]", $item, time() + (86400 * 30), "/");
-
         }
     }
 ?>
@@ -22,7 +21,7 @@
                 <thead>
                     <tr>
                         <th scope="col">Termék</th>
-                        <th scope="col">Mennyiség</th>
+                        <th scope="col">DB</th>
                         <th scope="col">Ár</th>
                     </tr>
                 </thead>
@@ -59,13 +58,28 @@
                 ?>
                 </tbody>
             </table>
-            <div class="m-1 d-flex">
-                <form class="p-2" action="/components/cookies/deleteAll.php" method="post">
-                    <button class="btn btn-danger" type="submit"><img src="images/components/delete.svg"></button>
+                <form class="row" action="/components/cookies/deleteAll.php" method="post">
+                    <div class="col-12">
+                        <button class="btn btn-danger" style="float: right" type="submit"><img src="images/components/delete.svg"></button>
+                    </div>
                 </form>
-                <form class="p-2" action="/components/cookies/deleteAll.php" method="post">
-                    <button class="btn btn-success" type="submit"><img src="images/components/receipt.svg"> számla
-                        elkészítése</button>
+                <form class="row mt-2" action="/components/receipt.php" method="post">
+                    <div class="col-10">
+                        <div class="form-floating">
+                            <select class="form-select" id="floatingSelect" name="paymentMethod" aria-label="Floating label select example" required>
+                                <option value="1">Utalással</option>
+                                <option value="2">Átvevőponton</option>
+                                <option value="3">Postai utánvétel</option>
+                            </select>
+                            <label for="floatingSelect">Fizetés módja</label>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <button class="btn btn-success" type="submit" style="float: right; height: 100%">
+                            <img src="images/components/receipt.svg">
+                            <span class="d-none d-md-block">rendelés lezárása</span>
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>
