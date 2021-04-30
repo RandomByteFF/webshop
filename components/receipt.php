@@ -14,7 +14,7 @@
     if(!isset($_COOKIE["cart"])){ 
         header("location: /shop");
         exit();
-    }    
+    }
 ?>
                 
 <!DOCTYPE html>
@@ -159,7 +159,6 @@
                                     $query="SELECT name, price FROM items";
                                     $result = $conn->query($query);
                                     $data = array();
-                                    $conn->close();
                                 
                                     while($row = $result->fetch_assoc()){
                                         array_push($data, array($row["name"], $row["price"]));
@@ -251,4 +250,23 @@
         <button type="submit">Kilépés</button>
     </form>
 </body>
+<?php 
+    $query = "INSERT INTO receipts VALUES ('', ";
+    $allInformation=array("name", "postal_code", "town", "address", "phone", "email");
+    foreach ($allInformation as &$info) {
+        $query = $query."\"".$_SESSION[$info]."\",";
+    }
+    $cart="";
+    foreach ($_COOKIE["cart"] as $id => $amount) {
+        $cart= $cart.$id."\t-\t".$amount."\n";
+    }
+    $query= $query."\"".$_POST["paymentMethod"]."\",\"".$cart."\");";
+    $result = $conn->query($query);
+    if ( $result === TRUE) {
+        echo "<script>console.log('added')</script>";
+    } else {
+        echo "<script>console.log('error')</script>";
+    }
+    $conn->close();
+?>
 </html>

@@ -46,7 +46,17 @@
                             $priceSum +=$data[$id][1]*$amount;
                             echo "<tr>
                                 <td>".$data[$id][0]."</td>
-                                <td>".$amount."</td>
+                                <td class='d-flex'>
+                                    <form action='/components/cookies/plus.php' method='post'>
+                                        <input type='hidden' name='id' value=".$id.">
+                                        <button class='btn btn-success ' type='submit'>+</button>
+                                    </form>
+                                    <input type='number' style='width:80%; margin-right: 10px; margin-left: 10px' min='1' value='".$amount."' />
+                                    <form action='/components/cookies/minus.php' method='post'>
+                                        <input type='hidden' name='id' value=".$id.">
+                                        <button class='btn btn-danger ' type='submit'>-</button>
+                                    </form>
+                                </td>
                                 <td>".number_format(($data[$id][1]*$amount), 0, ".", " ")." FT</td>
                             </tr>";
                         }
@@ -58,17 +68,21 @@
                 ?>
                 </tbody>
             </table>
-                <form class="row" action="/components/cookies/deleteAll.php" method="post">
+                <div class="row">
                     <div class="col-12">
-                        <button class="btn btn-danger" style="float: right" type="submit"><img src="images/components/delete.svg"></button>
+                        <form action="/components/cookies/deleteAll.php" method="post">
+                            <div>
+                                <button class="btn btn-danger" style="float: right" type="submit"><img src="images/components/delete.svg"></button>
+                            </div>
+                        </form>
                     </div>
-                </form>
+                </div>
                 <form class="row mt-2" action="/components/receipt.php" method="post">
                     <div class="col-10">
                         <div class="form-floating">
                             <select class="form-select" id="floatingSelect" name="paymentMethod" aria-label="Floating label select example" required>
                                 <option value="1">Utalással</option>
-                                <option value="2">Átvevőponton</option>
+                                <option value="2">Áruházban</option>
                                 <option value="3">Postai utánvétel</option>
                             </select>
                             <label for="floatingSelect">Fizetés módja</label>
@@ -77,7 +91,7 @@
                     <div class="col-2">
                         <button class="btn btn-success" type="submit" style="float: right; height: 100%">
                             <img src="images/components/receipt.svg">
-                            <span class="d-none d-md-block">rendelés lezárása</span>
+                            <span class="d-none d-md-block">számlához</span>
                         </button>
                     </div>
                 </form>
