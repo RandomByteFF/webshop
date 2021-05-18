@@ -34,7 +34,7 @@
             $cf = "";
             $prev = false;
             foreach($colorList as & $color) {
-                $cf = $cf.($prev ? " OR " : "")."(color LIKE "."'%".$color."%')";
+                $cf = $cf.($prev ? " OR " : "")."(color LIKE '%".$color."%')";
                 $prev = true;
             }
             $filters = $filters.($previous ? " AND " : "")."(".$cf.") GROUP BY id";
