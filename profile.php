@@ -11,9 +11,6 @@
 
         <form class="form" action="<?php echo "components/user/update.php"; ?>" method="POST">
             <div class="card p-2">
-                <div class="card-header h2">
-                    Bejelentkezés
-                </div>
                 <div class="card-body row">
                     <div class="col-sm-12 p-1">
                         <div class="form-floating">
