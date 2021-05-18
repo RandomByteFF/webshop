@@ -16,11 +16,10 @@
         exit();
     }
 ?>
-                
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
-    <title>Document</title>
+    <title>Számla</title>
     <script>
         window.addEventListener("load", start, false);
         var canvas;
@@ -32,7 +31,7 @@
             let source = `<div xmlns="http://www.w3.org/1999/xhtml" style="padding:20px;background-color:white;">
                     <style>
                         .logo{
-                            width: 200px;
+                            width: 350px;
                             background-color: #0B132B;
                             text-align: center;
                             color:#6FFFE9;
@@ -46,7 +45,7 @@
                             position: fixed;
                             width: 100%;
                             text-align: center;
-                            transform: translateX(-200px);
+                            transform: translateX(-350px);
                         }
                         .h{
                             display: inline-block;
@@ -79,7 +78,7 @@
 
                     <div class="h">
                         <div class="logo">
-                            Brand name
+                            Gamer Tribute
                         </div>
                         <span class="title">Számla</span>
                     </div>
@@ -92,8 +91,8 @@
                             </tr>
                             <?php
                                 $partners=array(
-                                    array("Név: ", "Brand name Bt.", "name"),
-                                    array("Email: ", "brand.name@gmail.com", "email"),
+                                    array("Név: ", "Gamer Tribute Bt.", "name"),
+                                    array("Email: ", "Gamer.Tribute@proba.com", "email"),
                                     array("Tel: ", "+3600000000", "phone"),
                                     array("", "2600", "postal_code"),
                                     array("", "Vác", "town"),
