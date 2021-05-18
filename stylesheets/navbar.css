@@ -21,7 +21,7 @@
     background-color: var(--nav);
     color: #49B8A7 !important;
     font-size: 15pt;
-    padding-top: 0px;
+    padding-top: 0;
     font-style: italic;
     padding-left: 3px;
 }
@@ -36,31 +36,31 @@
 
 .navbar-toggler {
     margin-bottom: 12px;
-    padding-top: 0px
+    padding-top: 0;
 }
 
 .search-left{
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px 0 0 10px;
     height: 50px;
 }
 
 .search-right{
-    border-radius: 0px 10px 10px 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    border-radius: 0 10px 10px 0;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-top: 7px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 
     background-color: #6FFFE9;
     color: #000;
 }
 
 .search-right:hover {
-    border-radius: 0px 10px 10px 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
+    border-radius: 0 10px 10px 0;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-top: 7px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
 
     background-color: #5BC0BE;
     color: #000;

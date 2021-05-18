@@ -12,14 +12,14 @@
 <nav class="navbar navbar-dark navbar-expand-xl" id="navigation">
     <div class="container-fluid">
         <!--BRAND NAME-->
-        <a class="navbar-brand brandtext" href="/">Brand name<br><div class=underheader>Egy ütős szinoníma</div></a>
+        <a class="navbar-brand brandtext" href="/">Gamer Tribute<br><div class=underheader>Egy ütős szinoníma</div></a>
         <!--NAVBAR TOGGLER-->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <!--MENU POINTS-->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav me-auto mb-2 ">
                 <!--MAIN-->
                 <li class="nav-item navtext">
                     <a class="nav-link navtext <?php echo ($page == "/" ? "active":"")?>" aria-current="page" href="..">Főoldal</a>

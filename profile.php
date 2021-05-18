@@ -48,7 +48,7 @@
                     <div class="col-sm-12 p-1">
                         <div class="form-floating">
                             <input type="tel" class="form-control" name="phone" placeholder="street" value="<?php echo $_SESSION["phone"]; ?>"
-                                pattern="([0-9]{11}|\+[0-9]{11})" >
+                                pattern="([0-9]{11}|\+[0-9]{11}|[0-9]{10}|\+[0-9]{10})">
                             <label for="phone">Telefonszám</label>
                         </div>
                     </div>
